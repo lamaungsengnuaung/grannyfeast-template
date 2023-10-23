@@ -22,30 +22,36 @@
     />
     <!--Custom CSS Link-->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/general.css" />
   </head>
   <body>
     <header class="header">
-      <img
-        src="./img/grannyfeast_logo.png"
-        alt="grannyfeast_logo"
-        class="logo"
-      />
+      <a href="#">
+        <img
+          src="./img/grannyfeast_logo.png"
+          alt="grannyfeast_logo"
+          class="logo"
+        />
+      </a>
+
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="main-nav-link" href="#">nav1</a>
+            <a class="main-nav-link" href="#section-how">How it works</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">nav2</a>
+            <a class="main-nav-link" href="#section-meals">Meals</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">nav3</a>
+            <a class="main-nav-link" href="#section-testimonial">Testimonial</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">nav4</a>
+            <a class="main-nav-link" href="#section-pricing">Pricing</a>
           </li>
           <li>
-            <a class="main-nav-link nav-cta" href="#">nav5</a>
+            <a class="main-nav-link nav-cta" href="#section-cta"
+              >Try For Free</a
+            >
           </li>
         </ul>
       </nav>
@@ -125,7 +131,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="section-how">
         <div class="container">
           <span class="sub-heading">How It Work</span>
           <h2 class="heading-secondary">
@@ -189,7 +195,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="section-meals">
         <div class="container">
           <span class="sub-heading">meals</span>
           <h2 class="heading-secondary">
@@ -306,7 +312,10 @@
           <a href="#" class="link"> See All Recipes &rarr; </a>
         </div>
       </section>
-      <section class="section-testimonial grid grid--2--cols">
+      <section
+        class="section-testimonial grid grid--2--cols"
+        id="section-testimonial"
+      >
         <div class="testimonial-container">
           <span class="sub-heading">testimonial</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -402,7 +411,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="section-pricing">
         <div class="container">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-secondary">
@@ -523,7 +532,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="section-cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -534,7 +543,7 @@
                 first meal is on us!
               </p>
               <form action="#" class="cta-form">
-                <div>
+                <div class="cta-input-box">
                   <label for="full-name">Your Name</label>
                   <input
                     id="full-name"
@@ -545,7 +554,7 @@
                   />
                 </div>
 
-                <div>
+                <div class="cta-input-box">
                   <label for="for-email">Your Email</label
                   ><input
                     id="for-email"
@@ -554,7 +563,7 @@
                     required
                   />
                 </div>
-                <div>
+                <div class="cta-input-box">
                   <label for="">Where did you hear from us?</label>
                   <select name="" id="select-where">
                     <option value=" Please Choose Option">
