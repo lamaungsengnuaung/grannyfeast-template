@@ -21,8 +21,9 @@
       referrerpolicy="no-referrer"
     />
     <!--Custom CSS Link-->
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/query.css" />
   </head>
   <body>
     <header class="header">
@@ -37,24 +38,26 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="main-nav-link" href="#section-how">How it works</a>
+            <a class="main-nav-link" href="#how">How it works</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#section-meals">Meals</a>
+            <a class="main-nav-link" href="#meals">Meals</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#section-testimonial">Testimonial</a>
+            <a class="main-nav-link" href="#testimonial">Testimonial</a>
           </li>
           <li>
-            <a class="main-nav-link" href="#section-pricing">Pricing</a>
+            <a class="main-nav-link" href="#pricing">Pricing</a>
           </li>
           <li>
-            <a class="main-nav-link nav-cta" href="#section-cta"
-              >Try For Free</a
-            >
+            <a class="main-nav-link nav-cta" href="#cta">Try For Free</a>
           </li>
         </ul>
       </nav>
+      <button class="btn btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -72,7 +75,7 @@
               >Start Eating Well</a
             ><a href="#" class="btn btn--outline">Learn More &darr;</a>
             <div class="delivered-meals">
-              <div class="delivered-img margin-right-sm">
+              <div class="delivered-img">
                 <img
                   src="./img/customers/customer-1.jpg"
                   alt="Customer Image"
@@ -131,7 +134,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how" id="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="sub-heading">How It Work</span>
           <h2 class="heading-secondary">
@@ -195,8 +198,8 @@
           </div>
         </div>
       </section>
-      <section class="section-meals" id="section-meals">
-        <div class="container">
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
           <span class="sub-heading">meals</span>
           <h2 class="heading-secondary">
             GrannyFeast AI chooses from 5,000+ recipes
@@ -312,10 +315,7 @@
           <a href="#" class="link"> See All Recipes &rarr; </a>
         </div>
       </section>
-      <section
-        class="section-testimonial grid grid--2--cols"
-        id="section-testimonial"
-      >
+      <section class="section-testimonial grid grid--2--cols" id="testimonial">
         <div class="testimonial-container">
           <span class="sub-heading">testimonial</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -411,7 +411,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing" id="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="sub-heading">Pricing</span>
           <h2 class="heading-secondary">
@@ -532,7 +532,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta" id="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -630,7 +630,7 @@
             <p>
               <a class="footer-link" href="tel:415-201-6370" class="phone"
                 >415-201-6370</a
-              >
+              ><br />
               <a class="footer-link" href="mailto:hello@GrannyFeast.com"
                 >hello@GrannyFeast.com</a
               >
@@ -676,4 +676,8 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+  <!-- smoothscroll-polyfill -->
+  <script src="https://unpkg.com/browse/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <!-- Custom JS File -->
+  <script src="./js/script.js"></script>
 </html>
