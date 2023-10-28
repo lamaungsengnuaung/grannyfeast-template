@@ -5,6 +5,7 @@ document
   });
 
 const allLinks = document.querySelectorAll('a:link');
+const headerEl = document.querySelector('.header');
 
 allLinks.forEach((link) => {
   link.addEventListener('click', function (e) {
